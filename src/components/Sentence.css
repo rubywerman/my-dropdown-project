@@ -1,0 +1,25 @@
+.sentence-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: rgb(34, 34, 35);  
+  }
+  
+  .trigger-word {
+    cursor: pointer;
+    color: rgb(34, 34, 35);  
+    background-color: rgb(185, 191, 196);
+    padding: 2px 1px;
+    }
+  
+  .content {
+    margin-top: 5px; 
+  }
+
+  body {
+    font-family: 'Baskerville', serif;
+    font-size: 32px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  
