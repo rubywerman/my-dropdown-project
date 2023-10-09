@@ -6,6 +6,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <img className="ruby" src={'/rubywerman.png'}/>
       <SentencesList />
     </div>
   );

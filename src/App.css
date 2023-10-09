@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.ruby {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: -65px;
+  scale: 75%;
+}
+

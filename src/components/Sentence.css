@@ -4,6 +4,12 @@
     align-items: flex-start;
     color: rgb(34, 34, 35); 
     margin-bottom: -35px;
+    transition: margin 0.2s ease; 
+    margin-top: -20px;
+  }
+
+  .sentence-container.open {
+    margin-bottom: -25px;
   }
   
   .trigger-word {
@@ -16,12 +22,27 @@
   .content {
     margin-top: -20px; 
     font-size: 24px;
+    text-align: left;
   }
 
   body {
     font-family: 'Baskerville', serif;
     font-size: 32px;
-    margin-top: 10px;
-    margin-left: 20px;
+    margin-top: 70px;
+    margin-left: 100px;
   }
-  
+
+  .button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    font-size: 12px;
+    scale: 50%;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .button:hover {
+    cursor: default;
+    scale: 55%;
+  }
