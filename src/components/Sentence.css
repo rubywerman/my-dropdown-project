@@ -12,6 +12,13 @@
   margin-bottom: 15px;
 }
 
+.name {
+  font-family: 'More Sugar', sans-serif;
+  display: flex;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
 .sentence-container {
     display: flex;
     flex-direction: column;
