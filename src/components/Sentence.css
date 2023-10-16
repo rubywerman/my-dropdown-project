@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'More Sugar';
+  src: url('../assets/MoreSugar-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.name {
+  font-family: 'More Sugar', sans-serif;
+  display: flex;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
 .sentence-container {
     display: flex;
     flex-direction: column;
@@ -15,19 +29,37 @@
   .trigger-word {
     cursor: pointer;
     color: rgb(34, 34, 35);  
-    background-color: rgb(185, 191, 196);
+    background-color: rgb(181, 213, 241);
     padding: 2px 1px;
-    }
+  }
+  
+  .trigger-word:hover {
+      background-color: rgb(168, 199, 225);
+  }
+
+  .work-trigger {
+    cursor: pointer;
+    color: rgb(34, 34, 35);  
+    background-color: rgb(203, 226, 245);
+    padding: 2px 1px;
+  }
+  
+  .work-trigger:hover {
+      background-color:  rgb(188, 210, 227);
+  }
   
   .content {
     margin-top: -20px; 
-    font-size: 24px;
+    font-size: 22px;
     text-align: left;
   }
 
+  header {}
+
   body {
-    font-family: 'Baskerville', serif;
-    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 430px;
     margin-top: 70px;
     margin-left: 100px;
   }
@@ -36,13 +68,79 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 20px;
     font-size: 12px;
     scale: 50%;
     transition: all 0.3s ease-in-out 0s;
   }
 
   .button:hover {
-    cursor: default;
-    scale: 55%;
+    scale: 52%;
+  }
+
+  .work-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 22px;
+    text-align: left;
+    margin-top: 8px;
+  }
+
+  .work-text span.hovered {
+    padding: 2px 1px;
+  }
+
+  .acronym {
+    background-image: linear-gradient(to right, rgb(181, 213, 241) 75%, transparent 75%);
+    background-position: 0 1.04em;
+    background-repeat: repeat-x;
+    background-size: 8px 3px;
+  }
+
+  .highlighted, .underlined {
+    margin-bottom: 4px;
+  }
+
+  .highlighted {
+    background-color: rgb(181, 213, 241);
+    padding: 2px 1px;
+}
+
+  .underlined {
+    border-bottom: 2px dashed rgb(181, 213, 241);
+    color:  rgb(34, 34, 35) !important;
+    text-decoration: none; 
+  }
+
+  .underlined:hover {
+    border-bottom: 2px dashed rgb(116, 142, 165);
+  }
+
+  .work-expand {
+    margin-top: 2px;
+    padding: 2px 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+  }
+  
+  .work-info {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 750px;
+    padding-top: 4px;
+  }
+
+  .expanded-content {
+    margin-bottom: 5px;
+    transition: margin 0.2s ease; 
+    opacity: 0;
+  }
+  
+  .expanded-content.open {
+    opacity: 1;
+    margin-bottom: 7px;
   }

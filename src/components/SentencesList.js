@@ -1,12 +1,13 @@
 import { React, useState } from 'react';
 import Sentence from './Sentence';
+import WorkText from './WorkText';
+import egg from '../assets/egg.png'
+import cracked from '../assets/cracked.png'
 
 const SentencesList = () => {
   const sentences = [
-    { sentence: 'Writes code.', triggerWord: 'code', content: 'I\'m a software engineer at Tableau in core services.' },
-    { sentence: 'Makes filters.', triggerWord: 'filters', content: 'I create augmented reality filters for Instagram, Tiktok, and Snapchat. I\'m in the top 1% of Tiktok effect creators. My filters have millions of impressions worldwide.' },
-    { sentence: 'Has work experience.', triggerWord: 'experience', content: ["test", "test1"] },
-    { sentence: 'And done projects.', triggerWord: 'projects', content: 'This is the new sentence for filters.' }
+    { sentence: 'Writes code.', triggerWord: 'code', content:  <WorkText/> },
+    { sentence: 'Makes filters.', triggerWord: 'filters', content: 'I create augmented reality filters for Instagram, Tiktok, and Snapchat. My filters have millions of impressions worldwide.' }
   ];
 
   const [openStates, setOpenStates] = useState(Array(sentences.length).fill(false));
@@ -17,13 +18,11 @@ const SentencesList = () => {
   };
 
   const toggleDropdown = index => {
-    const newOpenStates = [...openStates];
-    newOpenStates[index] = !newOpenStates[index];
+    const newOpenStates = Array(sentences.length).fill(false); 
+    newOpenStates[index] = !openStates[index]; 
     setOpenStates(newOpenStates);
-  };
+};
 
-
-  console.log(openStates.every(state => state));
   return (
     <div className="sentences-list">
       {sentences.map((sentenceData, index) => (
@@ -36,7 +35,7 @@ const SentencesList = () => {
       ))}
       <img
         className='button'
-        src={!openStates.every(state => state) ? '/egg.png' : '/cracked.png'}
+        src={!openStates.every(state => state) ? egg : cracked}
         alt={'egg'}
         onClick={toggleAll}
       /> 
