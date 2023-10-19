@@ -90,13 +90,14 @@
 }
 
   .underlined {
-    border-bottom: 3px dashed rgb(181, 213, 241);
-    color:  rgb(34, 34, 35) !important;
+    border-bottom: 3px dashed rgb(101, 129, 153);
+    color: rgb(101, 129, 153) !important;
     text-decoration: none; 
   }
 
   .underlined:hover {
-    border-bottom: 3px dashed rgb(116, 142, 165);
+    border-bottom: 3px dashed rgb(88, 108, 125);
+    color:  rgb(88, 108, 125) !important;
   }
 
   .work-expand {
