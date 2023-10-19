@@ -7,9 +7,9 @@ const WorkText = () => {
     
     return (
         <div className="work-text">
-            <span>I'm a software engineer at Tableau in core services on user, groups, and site management.</span>
-            <span>During my time at UC Berkeley,</span>
-            <WorkExpand sentence="I did" trigger="internships " content={
+            <span className='work-expand'>I'm a software engineer at Tableau in core services on user, groups, and site management.</span>
+            <span className='work-expand'>During my time at UC Berkeley,</span>
+            <WorkExpand sentence="I did " trigger="internships " content={
                 <p>
                     <SentenceWithLink 
                         sentence="At NASA, I added test tools for the human-rated Launch Control System. "
