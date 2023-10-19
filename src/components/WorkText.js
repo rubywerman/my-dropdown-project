@@ -22,7 +22,7 @@ const WorkText = () => {
                 </p>
                 }
             />
-            <WorkExpand sentence="and " trigger="not internships (research)." content={
+            <WorkExpand sentence="and " trigger="research." content={
                 <p>
                     <SentenceWithLink 
                         sentence="At Public Editor, I lead a team focused on gamification. " 
