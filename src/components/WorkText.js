@@ -2,12 +2,10 @@ import React, { useState } from 'react';
 import WorkExpand from './WorkExpand';
 import SentenceWithLink from './SentenceWithLink';
 const WorkText = () => {
-    const mlh = "contributed to open source projects like Sci-kit Learn during the MLH Fellowship, ";
-    const uchic = "and worked on research on classifying cloud formations using deep learning at the Center for Data and Computing at the University of Chicago, which led to two papers.";
     
     return (
         <div className="work-text">
-            <span className='work-expand'>I'm a software engineer at Tableau in core services on user, groups, and site management.</span>
+            <span className='work-expand'>I'm currently a software engineer at Tableau in core services- authentication</span>
             <span className='work-expand'>During my time at UC Berkeley,</span>
             <WorkExpand sentence="I did " trigger="internships " content={
                 <p>
@@ -16,7 +14,7 @@ const WorkText = () => {
                         replacements={[{customWord: "NASA", url: "https://www.nasa.gov/humans-in-space/nasa-certifies-new-launch-control-system-for-artemis-i/"}]}
                     />
                     <SentenceWithLink 
-                        sentence="Then at Tableau, I implemented identity provider initiated single logout."
+                        sentence="Then at my Tableau, I implemented identity provider initiated single logout."
                         replacements={[{customWord: "Tableau", url: "https://www.tableau.com/"}]}
                     />
                 </p>
@@ -33,7 +31,7 @@ const WorkText = () => {
                         replacements={[{customWord: "MLH Fellowship", url: "https://github.blog/2020-06-24-welcome-to-the-inaugural-class-of-mlh-fellows/"}]}
                     />
                     <SentenceWithLink
-                        sentence="Additionally, I conducted research around classifying cloud formations using machine learning at the University of Chicago's Center for Data and Computing."
+                        sentence="I also conducted research around classifying cloud formations using machine learning at the University of Chicago's Center for Data and Computing."
                         replacements={[
                             { customWord: "cloud formations", url: "https://datascience.uchicago.edu/research/is-climate-change-changing-clouds/" },
                             { customWord: "papers", url: "https://scholar.google.com/citations?user=3_8fKaEAAAAJ&hl" }
