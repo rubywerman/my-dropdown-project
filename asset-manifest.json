@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.8c67f37a.css",
-    "main.js": "/static/js/main.5a1e1956.js",
+    "main.css": "/static/css/main.92c17854.css",
+    "main.js": "/static/js/main.20201975.js",
     "static/js/787.5a720903.chunk.js": "/static/js/787.5a720903.chunk.js",
     "static/media/MoreSugar-Regular.ttf": "/static/media/MoreSugar-Regular.a447f1f6ea779d9f4a99.ttf",
     "index.html": "/index.html",
-    "main.8c67f37a.css.map": "/static/css/main.8c67f37a.css.map",
-    "main.5a1e1956.js.map": "/static/js/main.5a1e1956.js.map",
+    "main.92c17854.css.map": "/static/css/main.92c17854.css.map",
+    "main.20201975.js.map": "/static/js/main.20201975.js.map",
     "787.5a720903.chunk.js.map": "/static/js/787.5a720903.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c67f37a.css",
-    "static/js/main.5a1e1956.js"
+    "static/css/main.92c17854.css",
+    "static/js/main.20201975.js"
   ]
 }
