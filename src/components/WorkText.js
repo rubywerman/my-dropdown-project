@@ -1,36 +1,49 @@
 import React, { useState } from 'react';
 import WorkExpand from './WorkExpand';
+import SentenceWithLink from './SentenceWithLink';
 const WorkText = () => {
-    const nasa = <div className="work-info">
-        <span>Intern at Kennedy Space Center, Spaceport Command and Control Development</span>
-        <span>Added features to a test tool for the human-rated <a className="underlined" href="https://www.nasa.gov/humans-in-space/nasa-certifies-new-launch-control-system-for-artemis-i/" target="_blank" rel="noopener noreferrer">Launch Control System</a> used for monitoring, controlling, and commanding spacecraft during launch</span>
-    </div>;
-
-    const publicEditor = <div className="work-info">
-    <span>Project of Goodly Labs and Berkeley Institute for Data Science</span>
-    <span>Led the implementation of a gamification system in <a className="underlined" href="https://www.publiceditor.io/" target="_blank" rel="noopener noreferrer">Public Editor</a> , aimed at enhancing user experience and driving participation. Public Editor is a nationwide data science <a className="underlined" href="https://www.washingtonpost.com/news/monkey-cage/wp/2018/11/08/heres-a-way-you-can-combat-fake-news/" target="_blank" rel="noopener noreferrer">project</a> involving thousands of volunteers and news readers</span>
-    </div>;
-
-    const uchic = <div className="work-info">
-    <span>Worked on a <a className="underlined" href="https://datascience.uchicago.edu/research/is-climate-change-changing-clouds/
-    " target="_blank" rel="noopener noreferrer">project</a> using deep learning and computer vision to classify cloud textures and patterns, and how those features have changed over time, in order to improve climate projections. Research led to two published <a className="underlined" href="https://scholar.google.com/citations?user=3_8fKaEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">papers</a>.</span>
-    </div>;
-
-    const mlh = <div className="work-info">
-    <span>Selected from 20,000 applicants to be part of the inaugural class of 100 <a className="underlined" href="https://github.blog/2020-06-24-welcome-to-the-inaugural-class-of-mlh-fellows/
-    " target="_blank" rel="noopener noreferrer">MLH Fellows</a>. Contributed to open source projects including Sci-Kit Learn, Project Jupyter, and Sci-Kit Image. I also worked in fellowship admissions, reviewing applications and interviewing candidates.</span>
-    </div>;
-
-  return (
-    <div className="work-text">
-        <span>I'm a software engineer at Tableau in core services on user, groups, and site management</span>
-            <span>Previously: </span>
-            <WorkExpand trigger="NASA" content={nasa}/>
-            <WorkExpand trigger="Public Editor" content={publicEditor}/>
-            <WorkExpand trigger="University of Chicago, Center for Data and Computing" content={uchic}/>
-            <WorkExpand trigger="Major League Hacking" content={mlh}/>
-    </div>
-  );
+    const mlh = "contributed to open source projects like Sci-kit Learn during the MLH Fellowship, ";
+    const uchic = "and worked on research on classifying cloud formations using deep learning at the Center for Data and Computing at the University of Chicago, which led to two papers.";
+    
+    return (
+        <div className="work-text">
+            <span>I'm a software engineer at Tableau in core services on user, groups, and site management.</span>
+            <span>During my undergrad at UC Berkeley,</span>
+            <WorkExpand sentence="I participated in " trigger="internships" content={
+                <p>
+                    <SentenceWithLink 
+                        sentence="I worked on the Launch Control System for Artemis I at NASA, "
+                        replacements={[{customWord: "NASA", url: "https://www.nasa.gov/humans-in-space/nasa-certifies-new-launch-control-system-for-artemis-i/"}]}
+                    />
+                    <SentenceWithLink 
+                        sentence="and helped implement IdP-initiated Single Logout for Tableau."
+                        replacements={[{customWord: "Tableau", url: "https://www.tableau.com/"}]}
+                    />
+                </p>
+                }
+            />
+            <WorkExpand sentence="and " trigger="research." content={
+                <p>
+                    <SentenceWithLink 
+                        sentence="I lead a team devoted to gamification and user experience at Public Editor, " 
+                        replacements={[{customWord: "Public Editor", url: "https://www.publiceditor.io/"}]}
+                    />  
+                    <SentenceWithLink 
+                        sentence="contributed to open source projects like Sci-kit Learn during the MLH Fellowship, " 
+                        replacements={[{customWord: "MLH Fellowship", url: "https://github.blog/2020-06-24-welcome-to-the-inaugural-class-of-mlh-fellows/"}]}
+                    />
+                    <SentenceWithLink
+                        sentence="and worked on research classifying cloud formations using deep learning at the Center for Data and Computing at the University of Chicago, which led to two papers."
+                        replacements={[
+                            { customWord: "cloud formations", url: "https://datascience.uchicago.edu/research/is-climate-change-changing-clouds/" },
+                            { customWord: "papers", url: "https://scholar.google.com/citations?user=3_8fKaEAAAAJ&hl" }
+                        ]}
+                    />
+                </p>  
+                }
+            />        
+        </div>
+    );
 };
 
 export default WorkText;

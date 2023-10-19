@@ -6,10 +6,10 @@ function SocialLinks() {
   return (
     <div className="social-links">
       <a href="https://github.com/rubywerman" target="_blank" rel="noopener noreferrer">
-        <FontAwesomeIcon icon={faGithub} size="1x" style={{ marginRight: '10px', color: '99CCFF'}} />
+        <FontAwesomeIcon className="icon1" icon={faGithub} size="1x"/>
       </a>
       <a href="https://www.linkedin.com/in/rubywerman/" target="_blank" rel="noopener noreferrer">
-        <FontAwesomeIcon icon={faLinkedin} size="1x" style={{color: '99CCFF'}}/>
+        <FontAwesomeIcon className="icon2" icon={faLinkedin} size="1x"/>
       </a>
     </div>
   );

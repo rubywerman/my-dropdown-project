@@ -1,21 +1,25 @@
 import React, { useState } from 'react';
 
-function WorkExpand({ trigger, content }) {
+function WorkExpand({ trigger, content, sentence }) {
     const [isTrigger, setTrigger] = useState(false);
 
     const handleClick = (event) => {
         event.stopPropagation(); 
         setTrigger(!isTrigger);
     };
+    console.log(content);
 
     return (
         <div className="work-expand">
-        <span className="work-trigger" onClick={handleClick}>
-            {trigger}
-        </span>
-        <div className={`expanded-content ${isTrigger ? 'open' : ''}`}>
-        {isTrigger && content}
-        </div>
+            <span>
+                {sentence}
+                <span className="work-trigger" onClick={handleClick}>
+                    {trigger}
+                </span>
+            </span>
+                <div className={`expanded-content ${isTrigger ? 'open' : ''}`}>
+                {isTrigger && content}
+            </div>
         </div>
     );
 }

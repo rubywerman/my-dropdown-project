@@ -6,9 +6,11 @@ import SocialLinks from './components/SocialLinks';
 function App() {
   return (
     <div className="App">
+      <div className="top-header">
       <div className="name">Ruby Werman</div>
-      <SentencesList />
       <SocialLinks/>
+      </div>
+      <SentencesList />
     </div>
   );
 }

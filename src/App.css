@@ -38,8 +38,24 @@
 }
 
 .social-links {
-  position: fixed; 
-  top: 20px;
-  right: 100px; 
+  padding-top: 13px;
   z-index: 1000; 
+  margin-left: 50px;
+}
+
+.icon1, .icon2 {
+  color:  rgb(181, 213, 241);
+}
+
+.icon1:hover, .icon2:hover {
+  color:  rgb(168, 199, 225);
+}
+
+.icon2 {
+  padding-left:10px;
+}
+
+.top-header {
+  display: flex;
+  flex-direction: row;
 }
