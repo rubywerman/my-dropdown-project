@@ -1,0 +1,6 @@
+Your website wasn't deploying because it was being served to rubywerman.github.io/personalWebsite,
+but you didn't update the start_url and homepage.
+
+"start_url": "/personalwebsite/" (manifest.json)
+"homepage": "https://rubywerman.github.io/personalwebsite" (package.json),
+

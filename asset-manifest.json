@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/personalwebsite/static/css/main.788584d0.css",
-    "main.js": "/personalwebsite/static/js/main.5964baa2.js",
-    "static/js/787.5a720903.chunk.js": "/personalwebsite/static/js/787.5a720903.chunk.js",
-    "static/media/MoreSugar-Regular.ttf": "/personalwebsite/static/media/MoreSugar-Regular.a447f1f6ea779d9f4a99.ttf",
-    "index.html": "/personalwebsite/index.html",
-    "main.788584d0.css.map": "/personalwebsite/static/css/main.788584d0.css.map",
-    "main.5964baa2.js.map": "/personalwebsite/static/js/main.5964baa2.js.map",
-    "787.5a720903.chunk.js.map": "/personalwebsite/static/js/787.5a720903.chunk.js.map"
+    "main.css": "/static/css/main.b9099cc2.css",
+    "main.js": "/static/js/main.81599fdd.js",
+    "static/js/787.5a720903.chunk.js": "/static/js/787.5a720903.chunk.js",
+    "static/media/MoreSugar-Regular.ttf": "/static/media/MoreSugar-Regular.a447f1f6ea779d9f4a99.ttf",
+    "index.html": "/index.html",
+    "main.b9099cc2.css.map": "/static/css/main.b9099cc2.css.map",
+    "main.81599fdd.js.map": "/static/js/main.81599fdd.js.map",
+    "787.5a720903.chunk.js.map": "/static/js/787.5a720903.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.788584d0.css",
-    "static/js/main.5964baa2.js"
+    "static/css/main.b9099cc2.css",
+    "static/js/main.81599fdd.js"
   ]
 }
