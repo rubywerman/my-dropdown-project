@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import WorkExpand from './WorkExpand';
 import SentenceWithLink from './SentenceWithLink';
 const WorkText = () => {
@@ -14,7 +14,7 @@ const WorkText = () => {
                         replacements={[{customWord: "NASA", url: "https://www.nasa.gov/humans-in-space/nasa-certifies-new-launch-control-system-for-artemis-i/"}]}
                     />
                     <SentenceWithLink 
-                        sentence="Then at my Tableau, I implemented identity provider initiated single logout."
+                        sentence="Then at my Tableau internship, I implemented identity provider initiated single logout."
                         replacements={[{customWord: "Tableau", url: "https://www.tableau.com/"}]}
                     />
                 </p>
