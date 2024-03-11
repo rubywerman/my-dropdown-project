@@ -1,13 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-function WorkExpand({ trigger, content, sentence }) {
+function WorkExpand({ trigger, content, sentence, isOpen }) {
     const [isTrigger, setTrigger] = useState(false);
+
+    useEffect(() => {
+        setTrigger(isOpen);
+    }, [isOpen]);
 
     const handleClick = (event) => {
         event.stopPropagation(); 
         setTrigger(!isTrigger);
     };
-    console.log(content);
 
     return (
         <div className="work-expand">
@@ -17,7 +20,7 @@ function WorkExpand({ trigger, content, sentence }) {
                     {trigger}
                 </span>
             </span>
-                <div className={`expanded-content ${isTrigger ? 'open' : ''}`}>
+            <div className={`expanded-content ${isTrigger ? 'open' : ''}`}>
                 {isTrigger && content}
             </div>
         </div>

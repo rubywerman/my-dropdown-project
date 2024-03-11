@@ -1,7 +1,7 @@
 import React from 'react';
 import WorkExpand from './WorkExpand';
 import SentenceWithLink from './SentenceWithLink';
-const WorkText = () => {
+const WorkText = ({ isOpen }) => {
     
     return (
         <div className="work-text">
@@ -19,6 +19,7 @@ const WorkText = () => {
                     />
                 </p>
                 }
+                isOpen={isOpen}
             />
             <WorkExpand sentence="and " trigger="research." content={
                 <p>
@@ -39,6 +40,7 @@ const WorkText = () => {
                     />
                 </p>  
                 }
+                isOpen={isOpen}
             />        
         </div>
     );
