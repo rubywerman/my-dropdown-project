@@ -2,7 +2,6 @@ import React from 'react';
 import WorkExpand from './WorkExpand';
 import SentenceWithLink from './SentenceWithLink';
 const WorkText = ({ isOpen }) => {
-    
     return (
         <div className="work-text">
             <span className='work-expand'>I'm currently a software engineer at Tableau in core services- authentication</span>

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 function WorkExpand({ trigger, content, sentence, isOpen }) {
     const [isTrigger, setTrigger] = useState(false);
-
     useEffect(() => {
         setTrigger(isOpen);
     }, [isOpen]);

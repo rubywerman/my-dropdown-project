@@ -13,14 +13,14 @@ const SentencesList = () => {
   const [openStates, setOpenStates] = useState(Array(sentences.length).fill(false));
   const [isWorkTextOpen, setWorkTextOpen] = useState(false); 
   
-  useEffect(() => {
-    setWorkTextOpen(openStates[0]);
-  }, [openStates]);
+  // useEffect(() => {
+  //   setWorkTextOpen(openStates[0]);
+  // }, [openStates]);
 
   const toggleAll = () => {
     const areAllOpen = openStates.every(state => state);
     setOpenStates(Array(sentences.length).fill(!areAllOpen));
-    setWorkTextOpen(!areAllOpen); 
+    setWorkTextOpen(true); 
   };
 
   const toggleDropdown = index => {
