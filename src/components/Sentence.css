@@ -74,6 +74,7 @@
 
   .button:hover {
     scale: 52%;
+    cursor: pointer;
   }
 
   .work-text {
