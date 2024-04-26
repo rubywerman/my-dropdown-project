@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from 'react';
+import { React, useState } from 'react';
 import Sentence from './Sentence';
 import WorkText from './WorkText';
 import egg from '../assets/egg.png'
