@@ -9,5 +9,5 @@ Inspired by https://www.danielhandler.com/. I love your books and your website.
 
 
 note to self:
-• npm run deploy
-• update custom domain in settings
+- npm run deploy
+- update custom domain in settings
