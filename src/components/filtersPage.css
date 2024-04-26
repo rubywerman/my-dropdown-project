@@ -1,0 +1,16 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 430px;
+    margin-top: 70px;
+    margin-left: 10px;
+    margin-right: 5px;
+    /* background-size: 20px 20px;
+    background-image:
+      linear-gradient(to right, rgb(230, 230, 230) 1px, transparent 1px),
+      linear-gradient(to bottom,  rgb(230, 230, 230) 1px, transparent 1px); */
+  }
+
+  .tiktok {
+    height: 600px;
+  }
