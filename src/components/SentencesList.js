@@ -12,15 +12,11 @@ const SentencesList = () => {
 
   const [openStates, setOpenStates] = useState(Array(sentences.length).fill(false));
   const [isWorkTextOpen, setWorkTextOpen] = useState(false); 
-  
-  // useEffect(() => {
-  //   setWorkTextOpen(openStates[0]);
-  // }, [openStates]);
 
   const toggleAll = () => {
     const areAllOpen = openStates.every(state => state);
     setOpenStates(Array(sentences.length).fill(!areAllOpen));
-    setWorkTextOpen(true); 
+    setWorkTextOpen(!isWorkTextOpen); 
   };
 
   const toggleDropdown = index => {
