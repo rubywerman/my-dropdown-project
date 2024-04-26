@@ -1,17 +1,20 @@
 import React from 'react';
-import SentencesList from './components/SentencesList';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './components/Home';
 import './App.css';
-import SocialLinks from './components/SocialLinks';
+import FiltersPage from './components/FiltersPage';
+import Layout from './components/Layout';
 
 function App() {
   return (
-    <div className="App">
-      <div className="top-header">
-      <div className="name">Ruby Werman</div>
-      <SocialLinks/>
-      </div>
-      <SentencesList />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/filters" index element={<FiltersPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
