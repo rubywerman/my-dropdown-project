@@ -7,7 +7,7 @@ import cracked from '../assets/cracked.png'
 const SentencesList = () => {
   const sentences = [
     { sentence: 'Writes code.', triggerWord: 'code', content:  <WorkText isOpen={false}/> },
-    { sentence: 'Makes filters.', triggerWord: 'filters', content: 'I create augmented reality filters for Instagram, Tiktok, and Snapchat. My filters have over 85 million impressions worldwide.' }
+    { sentence: 'Makes filters.', triggerWord: 'filters', content: 'I create augmented reality filters for Instagram, Tiktok, and Snapchat. My filters have over 90 million impressions worldwide.' }
   ];
 
   const [openStates, setOpenStates] = useState(Array(sentences.length).fill(false));
