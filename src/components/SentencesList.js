@@ -3,11 +3,16 @@ import Sentence from './Sentence';
 import WorkText from './WorkText';
 import egg from '../assets/egg.png'
 import cracked from '../assets/cracked.png'
+import { Link } from 'react-router-dom';
 
 const SentencesList = () => {
   const sentences = [
     { sentence: 'Writes code.', triggerWord: 'code', content:  <WorkText isOpen={false}/> },
-    { sentence: 'Makes filters.', triggerWord: 'filters', content: 'I create augmented reality filters for Instagram, Tiktok, and Snapchat. My filters have over 220 million impressions worldwide.' }
+    { sentence: 'Makes filters.', triggerWord: 'filters', content: (
+      <p>
+        I create augmented reality filters for Instagram, TikTok, and Snapchat. My filters have over 350 million impressions worldwide. More info <Link to="/filters" className="underlined">here.</Link>
+      </p>
+    ), }
   ];
 
   const [openStates, setOpenStates] = useState(Array(sentences.length).fill(false));
