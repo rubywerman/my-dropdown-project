@@ -45,9 +45,10 @@ function FiltersPage() {
             <SentenceWithEmphasis sentence="For a fraction of the price of a traditional campaign?" underlinedWords={["fraction"]} />
           </div>
         </div>
-        <div style={{marginTop: '50px'}}>
-          <span>Let's talk Tiktok Effects</span>
+        <div style={{marginTop: '40px'}}>
+          <span>You can with Tiktok Effects!</span>
         </div>
+        <div style={{marginTop: '30px', fontSize: '22px'}}><span>My top effects:</span></div>
         <div className="filter-container">
           <a href="https://www.tiktok.com/effect/CELEBRITY-HEIGHTS-326562171" target="_blank" rel="noopener noreferrer">
             <img className="hover-image" src={celebHeightIcon} alt="Celebrity Height Effect Icon" />
@@ -77,6 +78,8 @@ function FiltersPage() {
           <img className="hover-image" src={mcOrder} alt="McOrder Effect Icon" />
           </a>
         </div>
+        <div style={{marginTop: '20px'}}><span>Interested in taking your campaigns to the next level? Let's <a className='underlined' href="mailto:rubywerman@gmail.com"> chat!</a></span></div>
+
       </div>
     );
   }
