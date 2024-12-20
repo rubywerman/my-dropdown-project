@@ -10,7 +10,7 @@ const SentencesList = () => {
     { sentence: 'Writes code.', triggerWord: 'code', content:  <WorkText isOpen={false}/> },
     { sentence: 'Makes filters.', triggerWord: 'filters', content: (
       <p>
-        I create augmented reality filters for Instagram, TikTok, and Snapchat. My filters have over 770 million impressions worldwide. More info <Link to="/filters" className="underlined">here.</Link>
+        I create augmented reality filters for Instagram, TikTok, and Snapchat. My filters have over 1.6 billion impressions worldwide. More info <Link to="/filters" className="underlined">here.</Link>
       </p>
     ), }
   ];

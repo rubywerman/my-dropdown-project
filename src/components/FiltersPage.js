@@ -11,6 +11,7 @@ import whatHoliday from '../assets/filterIcons/whatHoliday.png';
 import gasStation from '../assets/filterIcons/gasStation.png';
 import mcOrder from '../assets/filterIcons/mcorder.png';
 import booBasket from '../assets/filterIcons/booBasket.png';
+import prediction from '../assets/filterIcons/prediction.png';
 import chik from '../assets/filterIcons/chikfila.png';
 import tacob from '../assets/filterIcons/taco.png';
 import { faTiktok } from '@fortawesome/free-brands-svg-icons';
@@ -21,7 +22,8 @@ const replacements = [
   { customWord: "Meghan Trainor", url: "https://www.tiktok.com/embed/7379367110406966571" },
   { customWord: "Alex Warren", url: "https://www.tiktok.com/embed/7378590190643744042" },
   { customWord: "Joe Mele", url: "https://www.tiktok.com/embed/7378607033312054574" },
-  { customWord: "Olivia Ponton", url: "https://www.tiktok.com/embed/7409415003893239071"}
+  { customWord: "Olivia Ponton", url: "https://www.tiktok.com/embed/7409415003893239071"},
+  { customWord: "Brooke Monk", url: "https://www.tiktok.com/@brookemonk_/video/7449878087845596446"}
 ];
 
 function FiltersPage() {
@@ -37,11 +39,11 @@ function FiltersPage() {
         </div>
         <div style={{lineHeight: 1.5}}>
           <div className="filter-sentence">
-            <SentenceWithEmphasis sentence="What if your campaign drove 100 million views, 100 thousand posts, and 10 million likes?" underlinedWords={["100 million views", "100 thousand posts", "10 million likes"]} />
+            <SentenceWithEmphasis sentence="What if your campaign drove 330 million views, 350 thousand user-generated video posts, and 20 million likes?" underlinedWords={["330 million views", "350 thousand user-generated video posts", "20 million likes"]} />
           </div>
           <div>
             {/* <SentenceWithLink sentence="Included Meghan Trainor, Alex Warren, and Joe Mele?" underlinedWords={["Meghan Trainor", "Alex Warren", "Joe Mele"]} /> */}
-            <SentenceWithLink sentence={"Included Meghan Trainor, Alex Warren, Joe Mele, and Olivia Ponton?"} replacements={replacements} />
+            <SentenceWithLink sentence={"Included Meghan Trainor, Alex Warren, Joe Mele, Brooke Monk, and Olivia Ponton?"} replacements={replacements} />
           </div>
           <div>
             <SentenceWithEmphasis sentence="For a fraction of the price of a traditional campaign?" underlinedWords={["fraction"]} />
@@ -52,6 +54,9 @@ function FiltersPage() {
         </div>
         <div style={{marginTop: '30px', fontSize: '22px'}}><span>My top effects:</span></div>
         <div className="filter-container">
+        <a href="https://www.tiktok.com/effect/2025-Predictions-1257666184" target="_blank" rel="noopener noreferrer">
+            <img className="hover-image" src={prediction} alt="2025 Prediction Effect Icon" />
+          </a>
         <a href="https://www.tiktok.com/effect/BOO-BASKET-772285731" target="_blank" rel="noopener noreferrer">
             <img className="hover-image" src={booBasket} alt="Boo Basket Effect Icon" />
           </a>
